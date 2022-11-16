@@ -1,6 +1,7 @@
 import React from "react";
 
-const Activity = () => {
+const Activity = ({time}) => {
+    
   return (
     <div className="sticky top-0 pt-10 px-6">
       <div className="flex items-center space-x-3">
@@ -49,7 +50,7 @@ const Activity = () => {
           <div>
               <h4 className="text-xl font-semibold text-[#0d1b2a]">Exercise Details</h4>
               <div className="bg-[#e1e4eb] py-3 px-3 flex justify-between items-center my-8 rounded-md">
-                <h4 className="font-semibold text-[#0d1b2a]">Exercise Time:  <span className="text-gray-400 font-normal">seconds</span></h4>
+                  <h4 className="font-semibold text-[#0d1b2a]">Exercise Time: <span className="text-gray-400 font-normal">{ time} seconds</span></h4>
               </div>
               <div className="bg-[#e1e4eb] py-2 px-3 flex justify-between items-center rounded-md">
                 <h4 className="font-semibold text-[#0d1b2a]">Break Time:  <span className="text-gray-400 font-normal">seconds</span></h4>

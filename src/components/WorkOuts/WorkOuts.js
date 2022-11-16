@@ -4,12 +4,19 @@ import Activity from "../Activity/Activity";
 import WorkOut from "../WorkOut/WorkOut";
 
 const WorkOuts = () => {
-  const [workOuts, setWorkOuts] = useState([]);
+    const [workOuts, setWorkOuts] = useState([]);
+    const [time, setTime] = useState(0);
   useEffect(() => {
     fetch("data.json")
       .then((res) => res.json())
       .then((data) => setWorkOuts(data));
   }, []);
+    
+    // let exerciseTime = 0;
+    const handleAddTime = (workout) => {
+        setTime(time + workout.time)
+    }
+    
   return (
     <div className="pt-20">
       <div className="w-[80%] mx-auto">
@@ -27,11 +34,11 @@ const WorkOuts = () => {
       <div className="grid grid-cols-[4fr_1fr]">
         <div className="w-[80%] mx-auto grid grid-cols-3 gap-y-8 my-10">
           {workOuts.map((workout) => (
-            <WorkOut key={workout.id} workout={workout} />
+              <WorkOut key={workout.id} workout={workout} handleAddTime={ handleAddTime} />
           ))}
         </div>
         <div className="bg-white w-80">
-          <Activity />
+                  <Activity time={time} />
         </div>
       </div>
     </div>
