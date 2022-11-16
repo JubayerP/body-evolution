@@ -1,0 +1,50 @@
+[
+    {
+      "id": 1,
+      "name": "Lunges",
+      "img": "https://img.freepik.com/free-photo/sport-wellbeing-active-lifestyle-concept-gloomy-disappointed-asian-girl-looking-upset-sportswoma_1258-111910.jpg?w=900&t=st=1668629298~exp=1668629898~hmac=ffb21f11eb305b654ab7d8c45cdf8f4a1fe47c1cd25d859a68bcaa2741c83fb9",
+      "desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
+      "time": 30,
+      "age": "22-24"
+    },
+    {
+      "id": 2,
+      "name": "dumbbell presses",
+      "img": "https://freepik.7xm.xyz/images/7xm.xyz383049.jpg",
+      "desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
+      "time": 40,
+      "age": "23-25"
+    },
+    {
+      "id": 3,
+      "name": "Burpees",
+      "img": "https://freepik.7xm.xyz/images/7xm.xyz810238.jpg",
+      "desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
+      "time": 25,
+      "age": "20-24"
+    },
+    {
+      "id": 4,
+      "name": "Barbell Bench Press",
+      "img": "https://freepik.7xm.xyz/images/7xm.xyz633454.jpg",
+      "desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
+      "time": 35,
+      "age": "22-30"
+    },
+    {
+      "id": 5,
+      "name": "Barbell Ab Rollout",
+      "img": "https://freepik.7xm.xyz/images/7xm.xyz501726.jpg",
+      "desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
+      "time": 32,
+      "age": "23-27"
+    },
+    {
+      "id": 6,
+      "name": "Planks",
+      "img": "https://freepik.7xm.xyz/images/7xm.xyz337652.jpg",
+      "desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
+      "time": 36,
+      "age": "18-28"
+    }
+  ]
