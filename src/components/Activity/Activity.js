@@ -1,6 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 
-const Activity = ({time}) => {
+const Activity = ({ time }) => {
+    const [breakTime, setBreakTime] = useState(0);
+    console.log(breakTime);
+    const breakTimeSeconds = [10, 20, 30, 40, 50];
+    
+    const handleBreakTime = (breakTime) => {
+        setBreakTime(breakTime);
+    }
     
   return (
     <div className="sticky top-0 pt-10 px-6">
@@ -39,11 +46,9 @@ const Activity = ({time}) => {
           <div className="">
               <h4 className="text-xl font-semibold text-[#0d1b2a]">Add A Break</h4>
               <div className="bg-[#e1e4eb] py-2 px-3 flex justify-between items-center my-8 rounded-md">
-                  <p className="cursor-pointer bg-white p-2 rounded-full text-[#0d1b2a] font-medium">10s</p>
-                  <p className="cursor-pointer bg-white p-2 rounded-full text-[#0d1b2a] font-medium">20s</p>
-                  <p className="cursor-pointer bg-white p-2 rounded-full text-[#0d1b2a] font-medium">30s</p>
-                  <p className="cursor-pointer bg-white p-2 rounded-full text-[#0d1b2a] font-medium">40s</p>
-                  <p className="cursor-pointer bg-white p-2 rounded-full text-[#0d1b2a] font-medium">50s</p>
+                  {
+                      breakTimeSeconds.map(time => <p key={time} onClick={()=>handleBreakTime(time)} className="cursor-pointer bg-white p-2 rounded-full text-[#0d1b2a] font-medium">{ time}s</p>)
+                  }
               </div>
           </div>
 
@@ -53,7 +58,7 @@ const Activity = ({time}) => {
                   <h4 className="font-semibold text-[#0d1b2a]">Exercise Time: <span className="text-gray-400 font-normal">{ time} seconds</span></h4>
               </div>
               <div className="bg-[#e1e4eb] py-2 px-3 flex justify-between items-center rounded-md">
-                <h4 className="font-semibold text-[#0d1b2a]">Break Time:  <span className="text-gray-400 font-normal">seconds</span></h4>
+                  <h4 className="font-semibold text-[#0d1b2a]">Break Time: <span className="text-gray-400 font-normal">{breakTime} seconds</span></h4>
               </div>
           </div>
           <button className="bg-[#0d1b2a] text-[#faf8f8] font-normal rounded-md py-3 w-full my-14">Activity Completed</button>
