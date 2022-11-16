@@ -3,7 +3,7 @@ import WorkOuts from "./components/WorkOuts/WorkOuts";
 
 function App() {
   return (
-    <div>
+    <div className="bg-[#faf8f8]">
       <WorkOuts />
     </div>
   );
