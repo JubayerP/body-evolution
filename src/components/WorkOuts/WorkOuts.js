@@ -31,14 +31,14 @@ const WorkOuts = () => {
         </h4>
       </div>
 
-      <div className="grid grid-cols-[4fr_1fr]">
-        <div className="w-[80%] mx-auto grid grid-cols-3 gap-y-8 my-10">
+      <div className="grid lg:grid-cols-[4fr_1fr] md:grid-cols-1">
+        <div className="lg:w-[80%] md:w-[70%] lg:mx-auto md:mx-auto grid md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-3 gap-y-8 my-10">
           {workOuts.map((workout) => (
               <WorkOut key={workout.id} workout={workout} handleAddTime={ handleAddTime} />
           ))}
         </div>
-        <div className="bg-white w-80">
-                  <Activity time={time} />
+        <div className="bg-white lg:w-80 md:w-[80%] mx-auto">
+              <Activity time={time} />
         </div>
       </div>
     </div>

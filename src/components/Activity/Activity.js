@@ -55,10 +55,12 @@ const Activity = ({ time }) => {
           <div>
               <h4 className="text-xl font-semibold text-[#0d1b2a]">Exercise Details</h4>
               <div className="bg-[#e1e4eb] py-3 px-3 flex justify-between items-center my-8 rounded-md">
-                  <h4 className="font-semibold text-[#0d1b2a]">Exercise Time: <span className="text-gray-400 font-normal">{ time} seconds</span></h4>
+                  <h4 className="font-semibold text-[#0d1b2a]">Exercise Time: </h4>
+                  <span className="text-gray-400 font-normal">{ time} seconds</span>
               </div>
               <div className="bg-[#e1e4eb] py-2 px-3 flex justify-between items-center rounded-md">
-                  <h4 className="font-semibold text-[#0d1b2a]">Break Time: <span className="text-gray-400 font-normal">{breakTime} seconds</span></h4>
+                  <h4 className="font-semibold text-[#0d1b2a]">Break Time: </h4>
+                  <span className="text-gray-400 font-normal">{breakTime} seconds</span>
               </div>
           </div>
           <button className="bg-[#0d1b2a] text-[#faf8f8] font-normal rounded-md py-3 w-full my-14">Activity Completed</button>
