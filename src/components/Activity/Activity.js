@@ -1,13 +1,20 @@
 import React, { useState } from "react";
+import toast, { Toaster } from "react-hot-toast";
 
 const Activity = ({ time }) => {
     const [breakTime, setBreakTime] = useState(0);
-    console.log(breakTime);
     const breakTimeSeconds = [10, 20, 30, 40, 50];
     
-    const handleBreakTime = (breakTime) => {
-        setBreakTime(breakTime);
-    }
+  
+    const handleBreakTime = (time) => {
+    setBreakTime(time)
+  }
+
+  const showToast = () => {
+    toast.success('You Done For Yor Activity!')
+  }
+
+  
     
   return (
     <div className="sticky top-0 pt-10 px-6">
@@ -63,7 +70,11 @@ const Activity = ({ time }) => {
                   <span className="text-gray-400 font-normal">{breakTime} seconds</span>
               </div>
           </div>
-          <button className="bg-[#0d1b2a] text-[#faf8f8] font-normal rounded-md py-3 w-full my-14">Activity Completed</button>
+      <button onClick={showToast} className="bg-[#0d1b2a] text-[#faf8f8] font-normal rounded-md py-3 w-full my-14">Activity Completed</button>
+      <Toaster
+  position="top-center"
+  reverseOrder={false}
+/>
     </div>
   );
 };
