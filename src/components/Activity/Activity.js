@@ -2,16 +2,15 @@ import React, { useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 
 const Activity = ({ time }) => {
-    const [breakTime, setBreakTime] = useState(0);
+  const [breakTime, setBreakTime] = useState(0);
     const breakTimeSeconds = [10, 20, 30, 40, 50];
     
-  
     const handleBreakTime = (time) => {
-    setBreakTime(time)
+      setBreakTime(time)
   }
 
   const showToast = () => {
-    toast.success('You Done For Yor Activity!')
+    toast.success('You Done For Yor Activity!');
   }
 
   
