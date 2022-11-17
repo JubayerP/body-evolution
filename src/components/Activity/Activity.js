@@ -91,13 +91,3 @@ const Activity = ({ time }) => {
 };
 
 export default Activity;
-
-{
-  /* <p
-              key={time}
-              onClick={() => handleBreakTime(time)}
-              className="cursor-pointer bg-white p-2 rounded-full text-[#0d1b2a] font-medium"
-            >
-              {time}s
-            </p>; */
-}
