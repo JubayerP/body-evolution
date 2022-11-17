@@ -19,8 +19,8 @@ const WorkOuts = () => {
     
   return (
     <div className="pt-20">
-      <div className="w-[80%] mx-auto">
-        <div className="flex items-center space-x-4">
+      <div className="lg:w-[80%] md:w-full sm:w-full mx-auto md:text-center lg:text-left sm:text-center text-center">
+        <div className="flex items-center md:justify-center lg:justify-start sm:justify-center justify-center space-x-4">
           <CgGym size={35} color="#0d1b2a" />
           <h3 className="text-4xl font-semibold uppercase text-[#0d1b2a]">
             Body Evolution
@@ -32,7 +32,7 @@ const WorkOuts = () => {
       </div>
 
       <div className="grid lg:grid-cols-[4fr_1fr] md:grid-cols-1">
-        <div className="lg:w-[80%] md:w-[70%] lg:mx-auto md:mx-auto grid md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-3 gap-y-8 my-10">
+        <div className="lg:w-[80%] md:w-[70%] lg:mx-auto md:mx-auto sm:mx-auto grid md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-3 mx-auto gap-y-8 my-10">
           {workOuts.map((workout) => (
               <WorkOut key={workout.id} workout={workout} handleAddTime={ handleAddTime} />
           ))}
